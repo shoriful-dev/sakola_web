@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --primary-color: #000D83;
+  --secondary-color: #0BB4FF;
+  --primary-text-color: #040931B5;
+  --background-color: #E7EFFF;
+  --sub-heading-font-size: 1.125rem;
+  --heading-font-size: 2.5rem;
+
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+  color: var(--primary-color);
+  padding: 15px;
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header>* {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 0 10px;
+}
+
+nav ul li a {
+  color: var(--primary-color);
+}
+
+nav ul li a:hover,
+.menu_btn a:hover {
+  color: var(--secondary-color);
+}
+
+.menu_btn a {
+  padding: 0 10px;
+}
+
+.menu_btn .sign_up {
+  margin-left: 10px;
+  border: 1px solid var(--primary-color);
+  padding: 5px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu_btn .sign_up:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Hero Section Styling Start*/
+.hero_section {
+  background-color: var(--background-color);
+  padding: 15px;
+}
+
+.conteiner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+
+.hero_conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.hero_image {
+  width: 50%;
+}
+
+.hero_image img {
+  width: 100%;
+}
+
+.sub_heading {
+  font-size: var(--sub-heading-font-size);
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+
+.heading {
+  font-size: var(--heading-font-size);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.hero_text h1.heading, .school_section h2.heading, .school_section p {
+  width: 60%;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  line-height: 1.7;
+}
+
+.hero_text p {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.btn_group {
+  margin: 24px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn,
+.outline_btn {
+  padding: 16px 38px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  transition: bacground-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.outline_btn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.btn a {
+  color: white;
+}
+
+.outline_btn a {
+  color: var(--primary-color);
+}
+
+.outline_btn {
+  background-color: transparent;
+}
+
+.avater_stats {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 10px;
+}
+
+.avater_group {
+  display: flex;
+  align-items: center;
+}
+
+.avater {
+  position: relative;
+  margin-left: -15px;
+}
+
+.avater_image img {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.placeholder .avater_counter {
+  width: 48px;
+  height: 48px;
+  background-color: #333;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section Styling End*/
+
+/* About Section Styling Start */
+.about_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about_image,
+.about_info {
+  width: 50%;
+}
+
+.about_info h2.heading {
+  width: 65%;
+}
+
+.why_us {
+  margin-top: 40px;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.why_us_box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 80%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.why_us_box:hover {
+  transform: scale(1.05);
+}
+.icon_text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 40px;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDFAFF;
+  border-radius: 50%;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+h3 {
+  font-size: 1rem;
+  color: #333;
+  line-height: 40px;
+}
+.arrow_icon {
+  margin-left: auto;
+}
+
+.arrow_icon img {
+  width: 16px;
+  height: 16px;
+}
+/* About Section Styling End */
+
+/* school section */
+.school_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 15px;
+}
+
+/* studing section */
+
+.classes_section {
+  text-align: center;
+  padding: 15px;
+}
+
+.classes_section h2.heading {
+  width: 45%;
+  margin: 0 auto;
+}
+
+/* Class cards container styling */
+
+.class_cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.class_card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.class_card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image styling */
+.course_image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Title, count, and rating styling */
+.course_title {
+  font-size: 1.2rem;
+  color: #040931;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.student_count {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.star_rating {
+  color: #f8b400;
+  font-size: 12px;
+}
+
+ /* newsletter section */
+ .newsletter {
+   position: relative;
+   height: 300px;
+   background-image: url('../images/news-letter.png');
+   background-size: cover;
+   background-position: center;
+   border-radius: 12px;
+ }
+
+ .newsletter .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #000d83d7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 12px;
+ }
+
+ .newsletter .content {
+   text-align: center;
+   color: white;
+ }
+
+ .newsletter h2 {
+   font-size: 2.5rem;
+   font-weight: bold;
+   margin-bottom: 20px;
+ }
+
+ .newsletter p {
+   margin-bottom: 30px;
+   color: white;
+ }
+
+ .newsletter .btn {
+   background-color: var(--secondary-color);
+   color: white;
+   border: none;
+   font-size: 1rem;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+
+
+ /* Footer styling */
+  footer{
+    background-color: var(--background-color); 
+    color: var(--primary-color);
+    padding: 15px;
+  }
+
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    justify-items: center;
+    padding: 50px 20px; 
+    gap: 20px;
+}
+  
+  .footer_section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer_section h4 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer_section p {
+    margin: 0;
+  }
+  
+  .footer .logo {
+    margin-bottom: 20px;
+  }
+  
+  .footer .logo img {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footer .social_media a {
+    color: var(--primary-font-color);
+    text-decoration: none;
+    margin-right: 15px;
+    background-color: var(--secondary-color);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer .social_media a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-10px);
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+  }
+  
+  .footer ul li a:hover {
+    color: #007bff; 
+  }
